@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Simple Page</title>
+</head>
+<body>
+	<h1>Simple HTML Page</h1>    
+    	<p>
+    	This is a very simple HTML page.
+    	</p>
+
+	<p>It's about as basic as they come. It has:<p>
+
+	<ul>
+		<li>An H1 Tag</li>
+		<li>Two paragraphs</li>
+		<li>An unordered list</li>
+	</ul>
+
+	<script>
+		
+		
+var multiple=[];
+ //
+var multiplenewdeclaration=new Array();
+var multiplenewdec=new Array(2);
+multiplenewdec=[1,2,3,4,5];
+
+multiple[1]=10;		
+		function myFunction()
+		{
+			alert("Hello, world!");	
+			console.log(multiple[1]);
+			console.log(multiplenewdec.length);
+		}
+		//myFunction();
+
+
+
+var str1="a";var str2="b";
+var num1=1;var num2=2;
+var numasstr="55";
+
+		function concats(){
+////console.log(str1+str2);
+//console.log(num1+num2);//returns 1
+//console.log(num1+str2);//returns 1b
+//console.log(num1*str2);//returns NaN
+
+console.log(!isNaN(numasstr));//returns NaN
+if(!isNaN(numasstr))
+{
+	console.log(numasstr);
+}
+
+
+		}
+//concats();
+
+function mathusage()
+{
+	console.log(Math.round(200.6));
+} 
+//mathusage()
+var strus="He said \"that's fine,\" and left.";
+var str2="a:a:a;a;a;a;a"
+function stringusage()
+{
+console.log(strus);
+if(str2.indexOf(";")!=-1)
+console.log(str2.split(";"));
+else
+ console.log("not presenet");
+
+ if (strus>str2)
+ {console.log("strus is larger than str2")}
+}
+//stringusage()
+ var today=new Date();
+ var todayymd=new Date(2000,12,12,12,60,60)
+ function datefunc()
+ {
+console.log("Today is"+today)
+console.log("Today time is"+todayymd)
+ }
+//datefunc();
+
+var player=new Object();
+player.name="Fred";
+player.score=1000;
+player.rank=1; 
+
+
+
+var player1={name:"Name is Name",score:40,rank:1};
+
+function objfunct()
+{
+	//console.log(player1.name);
+	console.log(this.name);
+}
+objfunct();
+//player1.logDetails=objfunct();
+
+// player1.logDetails();
+
+
+
+	</script>
+</body>
+</html>
